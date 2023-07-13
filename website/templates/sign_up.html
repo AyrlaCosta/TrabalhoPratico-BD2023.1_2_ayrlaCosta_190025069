@@ -1,0 +1,57 @@
+{% extends "base.html" %} {% block title %}Sign Up{% endblock %} {% block
+    content %}
+<form method="POST">
+    <br>
+    <h3 align="center">Registre-se</h3>
+    <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email"
+               class="form-control"
+               id="email"
+               name="email"
+               placeholder="Insira um e-mail válido" />
+    </div>
+    <div class="form-group">
+        <label for="firstName">Nome:</label>
+        <input type="text"
+               class="form-control"
+               id="firstName"
+               name="firstName"
+               placeholder="Insira seu nome" />
+    </div>
+    <div class="form-group">
+        <label for="id_number">Matrícula:</label>
+        <input type="text"
+               class="form-control"
+               id="id_number"
+               name="id_number"
+               placeholder="Insira seu número de matrícula (somente números)" />
+    </div>
+    <div class="form-group">
+        <label for="course">Curso:</label>
+        <input type="text"
+               class="form-control"
+               id="course"
+               name="course"
+               placeholder="Seu curso na Universidade de Brasília" />
+    </div>
+    <div class="form-group">
+        <label for="password1">Senha:</label>
+        <input type="password"
+               class="form-control"
+               id="password1"
+               name="password1"
+               placeholder="Insira sua senha" />
+    </div>
+    <div class="form-group">
+        <label for="password2">Confirme sua senha:</label>
+        <input type="password"
+               class="form-control"
+               id="password2"
+               name="password2"
+               placeholder="Insira a senha escolhida novamente" />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary" style="background-color: #2c9638;">Continuar</button>
+</form>
+    {% endblock %}
